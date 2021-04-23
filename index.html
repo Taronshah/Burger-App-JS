@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section id="redactor">
+        <h2>Burger king</h2>
+
+        <div id="totalPrice">
+            <h4>Total price</h4>
+            <span id="price">29</span>
+        </div>
+
+        <section id="burgerSetings">
+            <button onclick="getBurgerData()">
+                    confirmed
+            </button>
+
+            <label>
+                <input type="checkbox" id="salad"  class="checkbox" name="salad">
+                <span>salad <img src="./images/burgerProduct/salad.png"></span>
+                <div>
+                    <input type="number" placeholder="quantity" class="quantity" id="salad" readonly="false" minlength="2">
+                    <span>0.1$</span>
+                </div>
+            </label>
+
+            <label>
+                <input type="checkbox" id="bacon" class="checkbox" name="bacon">
+                <span>bacon <img src="./images/burgerProduct/bacon.png"> </span>
+                <div>
+                    <input type="number" placeholder="quantity" class="quantity" id="bacon" readonly="false">
+                    <span>0.4$</span>
+                </div>
+            </label>
+
+            <label>
+                <input type="checkbox" id="cheese" class="checkbox" name="cheese">
+                <span>cheese <img src="./images/burgerProduct/cheese.png"></span>
+                <div>
+                    <input type="number" placeholder="quantity" class="quantity" id="cheese" readonly="false">
+                    <span>0.3$</span>
+                </div>
+            </label>
+
+            <label>
+                <input type="checkbox" id="meat" class="checkbox" name="meat">
+                <span>meat <img src="./images/burgerProduct/steak.png"></span>
+                <div>
+                    <input type="number" placeholder="quantity" class="quantity" id="meat" readonly="false">
+                    <span>1$</span>
+                 </div>
+            </label>
+
+            <label>
+                <input type="checkbox" id="tomato"  class="checkbox" name="tomato">
+                <span>tomato <img src="./images/burgerProduct/tomato.png"></span>
+                <div>
+                    <input type="number" placeholder="quantity" class="quantity" id="tomato" readonly="false">
+                    <span>0.2$</span>
+                </div>
+            </label>
+            
+        </section>
+    </section>
+    
+    <section id="burgerResult">
+            <header class="bread-top"></header>
+                <span class="product" id="pr">
+            
+                </span>
+            <footer class="bread-bottom"></footer>
+   
+    </section>
+
+
+
+    <script src="./JavaScript/index.js"> </script>
+</body>
+</html>
